@@ -2,19 +2,18 @@ import Link from 'next/link';
 import { useCallback, useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 
+import { useTerms } from '@/contexts/terms';
+
 import styles from './Navbar.module.scss';
 
 const Navbar = () => {
+  const { getTerms } = useTerms();
+
   const [search, setSearch] = useState('');
 
   const handleSearchChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(event.target.value);
   }, []);
-
-  const handleSubmit = useCallback(() => {
-    // eslint-disable-next-line no-console
-    console.log(search);
-  }, [search]);
 
   return (
     <div className={styles.nav}>
@@ -28,7 +27,7 @@ const Navbar = () => {
         <div className={styles.search}>
           <input type="text" placeholder="Buscar..." value={search} onChange={handleSearchChange} />
 
-          <button onClick={handleSubmit}>
+          <button onClick={() => getTerms(search)}>
             <FiSearch size="1rem" />
           </button>
         </div>
