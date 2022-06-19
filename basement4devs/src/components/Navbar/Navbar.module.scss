@@ -48,9 +48,9 @@
   gap: 1rem;
 
   @media (max-width: $md) {
-    order: 3;
+    order: 2;
     width: 100%;
-    flex-basis: 100%;
+    flex-basis: auto;
     margin-right: 0;
   }
 

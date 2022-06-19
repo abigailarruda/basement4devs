@@ -1,5 +1,15 @@
+@use '@/styles/breakpoints.scss' as *;
+
 .container {
   width: 100%;
   max-width: 880px;
   margin: 0 auto;
+
+  @media (max-width: $md) {
+    padding: 1.5rem 5rem;
+  }
+
+  @media (max-width: $sm) {
+    padding: 1.5rem 2.5rem;
+  }
 }
