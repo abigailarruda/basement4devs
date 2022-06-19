@@ -14,7 +14,7 @@ O protótipo da tela foi feito no [Figma](https://www.figma.com/file/7f9EOXD7C2I
 
 ## Tecnologias
 
-- [ ] [Apollo](https://www.apollographql.com/)
-- [ ] [GraphQL](https://graphql.org/)
-- [ ] [json-graphql-server](https://github.com/marmelab/json-graphql-server)
-- [ ] [NextJS](https://nextjs.org/)
+- [x] [Apollo](https://www.apollographql.com/)
+- [x] [GraphQL](https://graphql.org/)
+- [x] [json-graphql-server](https://github.com/marmelab/json-graphql-server)
+- [x] [NextJS](https://nextjs.org/)
