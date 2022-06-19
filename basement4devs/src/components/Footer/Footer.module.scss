@@ -1,0 +1,43 @@
+@use '@/styles/colors.scss' as *;
+@use '@/styles/breakpoints.scss' as *;
+
+.footer {
+  width: 100%;
+  height: 96px;
+  margin: 0 0 0.5rem 0;
+  padding: 1.5rem 0;
+
+  background: $white;
+  border-top: 1px solid $neutral-100;
+
+  @media (max-width: $md) {
+    padding: 1.5rem 5rem;
+  }
+
+  @media (max-width: $sm) {
+    padding: 1.5rem 2.5rem;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  
+  a {
+    font-weight: 500;
+    font-family: 'Fira Code', monospace;
+    margin-bottom: 0.5rem;
+    color: $green-500;
+  }
+
+  p {
+    font-size: 0.75rem;
+    color: $neutral-500;
+  }
+}
